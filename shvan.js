@@ -12,7 +12,7 @@ client.on('ready', async () => {
     client.appInfo = await client.fetchApplication();
   }, 600);
   
- client.user.setActivity(`=help`, { type:"LISTENING" })
+ client.user.setActivity(`*help`, { type:"LISTENING" })
   console.log("${client.user.tag}")
 });
 
@@ -104,7 +104,7 @@ client.elevation = message => {
     if (message.author.id === config.sahip) permlvl = 4;
     return permlvl;
 };
-client.login(ODYwMzAwMjE1NDc4NjQ4ODU0.YN5PAg.jtFheNNIo4r6gqyLjzx89mfCVUk)
+client.login(config.token)
 
 
 //------------------------ Halka Açık Random Gif Pp -----------------------//
